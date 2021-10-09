@@ -1,0 +1,26 @@
+/*顶部菜单栏透明+标签较大化*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color: rgba(0, 0, 0, 0);}
+.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+.pageTitle {margin-top: auto; margin-bottom: auto;}
+.emby-tab-button {padding: 1.75em 1.7em;}
+
+
+/*顶部菜单栏按钮 首页.headerHomeButton {display: none;} 投射.headerCastButton {display: none;} 用户设置 .material-icons.person {display: none;}*/
+
+.headerSyncButton {display: none;}
+.headerButton.headerButtonRight.headerUserButton.paper-icon-button-light {display: none;}
+
+/*删除影片详情页底部“更多类似”影片推荐 */
+#similarCollapsible { display: none; }
+
+/*媒体库里将影片海报居中对齐 */
+.padded-right-withalphapicker {padding-right:2.5% !important;}
+
+/*Item Page - resize Subtitle bar*/
+.trackSelections {max-width: 22em;}
+
+/*关闭媒体库#-Z的索引标签*/
+.alphaPicker {display: none;}
+
+
