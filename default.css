@@ -1,6 +1,6 @@
 /*Fonts */
 
-@import url("https://css.cloud8.top:88/light.css");
+@import url("https://cdn.jsdelivr.net/gh/mastyu/css@main/light.css");
 @import url("./src/Raleway.css");
 @import url("./src/Montserrat.css");
 html,
@@ -1508,7 +1508,7 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
 /*Login Page Theming*/
 
 #loginPage {
-  background: url(https://css.cloud8.top:88/login.png),
+  background: url(https://cdn.jsdelivr.net/gh/mastyu/css@main/login.png),
     radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   background-size: cover !important;
   background-blend-mode: overlay;
