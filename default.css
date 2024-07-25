@@ -1,6 +1,5 @@
 /*Fonts */
-
-@import url("https://cdn.jsdelivr.net/gh/mastyu/css@main/light.css");
+/* 未启用的ICO字体 @import url("https://css.cloud8.top:88/css/light.css"); */
 html,
 body,
 h1,
@@ -73,9 +72,7 @@ html {
   overflow: visible;
 }
 
-/*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
-
-/*Firefox*/
+/*火狐浏览器字体*/
 
 .videoSubtitles {
   font-family: "Raleway", sans-serif !important;
@@ -83,7 +80,7 @@ html {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
 
-/*Chrome, Edge Chromium & Saffari*/
+/*谷歌,EdgeChromium，苹果浏览器字体*/
 
 video::-webkit-media-text-track-display {
   font-family: "Raleway", sans-serif !important;
@@ -233,7 +230,7 @@ a.listItem-border {
   border: 0.01em solid #191819;
 }
 
-/*fixing Poster Margin*/
+/*固定海报边距*/
 
 .itemsContainer > .card > .cardBox {
   margin-left: 16px;
@@ -578,7 +575,7 @@ select {
   text-shadow: 0 0 5px black !important;
 }
 
-/*Header*/
+/*标题*/
 
 .skinHeader-withBackground {
   text-shadow: 0 0 5px black;
@@ -749,13 +746,13 @@ div#itemBackdrop {
   text-shadow: none !important;
 }
 
-/*Subtitle preview*/
+/*字幕预览*/
 
 .subtitleappearance-preview {
   background: var(--accent) !important;
 }
 
-/*Video Player*/
+/*播放器样式*/
 
 div#videoOsdPage {
   overflow: hidden !important;
@@ -781,7 +778,7 @@ h1.sliderBubbleText {
   font-weight: 700;
 }
 
-/*cardbox border-radius change*/
+/*演员表头像遮罩半径*/
 
 #indexPage
   button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
@@ -791,7 +788,7 @@ h1.sliderBubbleText {
   button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .vertical-wrap button.cardImageContainer.coveredImage.cardContent,
 .emby-scroller button.cardImageContainer {
-  border-radius: 10px 10px 0px 0px !important;
+  border-radius: 12px 12px 12px 12px !important;
 }
 
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
@@ -842,6 +839,59 @@ h2 {
   width: 200px !important;
 }
 
+/* 影片LOGO */
+#itemDetailPage .detailLogo {
+  position: static;
+  margin-left: 32.5%;
+  display: block;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  flex-shrink: 0;
+  background-position: 0 50%;
+  margin-top: 8vh;
+}
+
+.layout-desktop .detailRibbon {
+  margin-top: 0;
+}
+
+.layout-mobile .detailRibbon {
+  margin-top: 0 !important;
+}
+
+.layout-mobile .detailLogo {
+  display: none !important;
+}
+
+.layout-mobile
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  padding-top: 4.5rem !important;
+}
+
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: none;
+}
+
+.hide + .detailPageWrapperContainer .itemName {
+  display: block !important;
+}
+
+.layout-desktop .hide + .detailPageWrapperContainer .detailRibbon {
+  margin-top: 10em;
+}
+
+.itemName {
+  margin: 0.5em 0 !important;
+}
+
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+}
+
+.dashboardSection .sectionTitleTextButton>.material-icons {
+    margin-left: .5em;
+}
+
 /* Adjust both "size-adjust" and "size" to modify size */
 
 .pageTitle {
@@ -853,7 +903,7 @@ h2 {
   padding: 1.75em 1.7em;
 }
 
-/*Blur backdrops, feel free to edit the intensity of the filter values*/
+/*模糊背景，可以自由编辑滤镜值的强度*/
 
 .backdropImage {
   -webkit-filter: blur(10px) saturate(110%) contrast(110%) brightness(95%);
@@ -879,8 +929,9 @@ h2 {
   box-shadow: 0 0 0 500vw rgb(0, 0, 0, 0.5), 0 0 20px 4px black;
 }
 
-/* Top menu transparency */
+/*顶部菜单透明度 */
 
+/*光标移动到目标上的显示效果 */
 .upNextDialog {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
@@ -894,12 +945,31 @@ h2 {
 .cardOverlayContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
+/*首页，我的最爱 标签较大化*/
+.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+
+/*顶部菜单栏按钮 首页.headerHomeButton {display: none;} 投射.headerCastButton {display: none;} 用户设置 .material-icons.person {display: none;}*/
+
+.headerSyncButton {display: none;}
+.headerButton.headerButtonRight.headerUserButton.paper-icon-button-light {display: none;}
+
+/*删除影片详情页底部“更多类似”影片推荐 */
+#similarCollapsible { display: none; }
+
+/*媒体库里将影片海报居中对齐 */
+.padded-right-withalphapicker {padding-right:2.5% !important;}
+
+/*Item Page - resize Subtitle bar*/
+.trackSelections {max-width: 22em;}
+
+/*关闭媒体库#-Z的索引标签*/
+.alphaPicker {display: none;}
 
 /*Theme some dialogues*/
 
 .mainDrawer.drawer-open {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
+  box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 200px 0px black;
 }
 
 .mainDrawer {
@@ -958,14 +1028,14 @@ h2 {
   overflow: scroll;
 }
 
-/*Fixing position of tv or movie poster*/
+/*电视或电影海报的固定位置*/
 
 .detailImageContainer .card {
   position: fixed;
   top: 50% !important;
 }
 
-/*Tweak series/movie/album title screen*/
+/*调整系列 /电影/专辑 标题屏幕*/
 
 .detailPagePrimaryContainer {
   background: rgba(0, 0, 0, 0) !important;
@@ -1225,7 +1295,7 @@ h2 {
   align-items: center;
 }
 
-/*Size episode preview images in a more compact way*/
+/*以更紧凑的方式调整剧集预览图像的大小*/
 
 .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
   display: grid;
@@ -1377,10 +1447,10 @@ h2 {
   font-size: 1.6em !important;
 }
 
-/* My Media Styling */
+/* 首页 “我的媒体” 显示风格*/
 
 .section0 button.itemAction.textActionButton {
-  height: 3.5em;
+  height: 2.5em;
   background: rgba(0, 0, 0, 0);
   border-radius: 10px;
 }
@@ -1441,7 +1511,7 @@ h2 {
   margin: 0.4em;
 }
 
-/*Narrow the login form*/
+/*用户登录框大小调整*/
 
 #loginPage .readOnlyContent,
 #loginPage form {
@@ -1476,37 +1546,43 @@ html:not(.layout-mobile) #loginPage .inputContainer {
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 2.75em;
+  background: transparent;
+  border-bottom: 3px solid white !important;
+  border-radius: 0;
 }
 
 html:not(.layout-mobile) #loginPage .inputLabelUnfocused {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 5%;
+  left: 0;
   transform: translateY(-50%);
   transition: 0.2s;
+  color: white;
+  font-size: 1.5em;
 }
 
 html:not(.layout-mobile) #loginPage .inputLabelFocused,
 html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
   top: -50%;
   left: 0;
-  -webkit-animation: act-labl 0.2s;
-  animation: act-labl 0.2s;
-  transform: translateY(-50%) scale(1.1);
   position: absolute;
   z-index: 1;
   transition: 0.2s;
-  -webkit-transform: translateY(-50%) scale(1.1);
-  -moz-transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%) scale(1.1);
   -o-transform: translateY(-50%) scale(1.1);
+  font-size: 1em;
+  color: white !important;
+  -webkit-animation: none !important;
+  animation: none !important;
 }
 
-/*Login Page Theming*/
+/*登录页面主题*/
 
 #loginPage {
-  background: url(https://cdn.jsdelivr.net/gh/mastyu/css@main/login.png),
+  background: url(https://04826d.cn/haoyu/css/login.png),
     radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   background-size: cover !important;
   background-blend-mode: overlay;
@@ -1538,6 +1614,7 @@ div#divUsers {
   backdrop-filter: blur(10px);
 }
 
+/* 移动端登录背景 样式 */
 .layout-mobile #loginPage {
   background: linear-gradient(140deg, #3e2247 10%, #003c50) !important;
   overflow: scroll;
@@ -1549,7 +1626,7 @@ div#divUsers {
   color: #373737;
   border-radius: 5px;
   margin-top: auto;
-  margin-bottom: -4rem;
+  margin-bottom: auto;
 }
 
 .layout-mobile #loginPage .cardBox.cardBox-bottompadded {
@@ -1560,6 +1637,7 @@ div#divUsers {
   box-shadow: none;
 }
 
+/* 移动端登录框和光标 样式 */
 .layout-mobile #loginPage .emby-input {
   height: 100%;
   width: 80%;
@@ -1569,10 +1647,11 @@ div#divUsers {
   backdrop-filter: none;
   box-shadow: none !important;
   border: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-shadow: none;
 }
 
+/* 移动端登录和忘记密码按钮 样式 */
 .layout-mobile #loginPage .raised {
   border-radius: 50px;
   background: linear-gradient(90deg, #aa5cc3 0%, #00a4dc);
@@ -1583,12 +1662,7 @@ div#divUsers {
 .layout-mobile #loginPage h1 {
   display: none;
 }
-
-.layout-mobile h1.itemName {
-  font-size: 2.2em;
-  font-weight: 700;
-}
-
+/* 移动端登录框 样式 */
 .layout-mobile #loginPage .inputContainer {
   position: relative;
   height: 3rem;
@@ -1597,24 +1671,17 @@ div#divUsers {
   overflow: hidden;
 }
 
+/* 移动端登录“用户” 样式 */
 .layout-mobile #loginPage .inputLabel[for="txtManualName"] {
-  font-size: 0;
+  font-size: 15px;
+  line-height:3em;
+  margin: 0px 8px; 
   color: #383838;
 }
 
-.layout-mobile #loginPage .inputLabel[for="txtManualName"]::before {
-  content: "\f406";
-  font-size: 2rem;
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
-}
-
 .layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
   content: "";
-  height: 70%;
+  height: 60%;
   width: 2px;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -1623,35 +1690,17 @@ div#divUsers {
   transform: translateY(-50%);
 }
 
-.layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
-  content: "";
-  height: 70%;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  right: 82.5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+/* 移动端登录“密码” 样式 */
 .layout-mobile #loginPage .inputLabel[for="txtManualPassword"] {
-  font-size: 0;
+  font-size: 15px;
+  line-height:3em;
+  margin: 0px 8px; 
   color: #383838;
-}
-
-.layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::before {
-  content: "\f084";
-  font-size: 2rem;
-  font-family: "Font Awesome 5 Pro";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
 }
 
 .layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::after {
   content: "";
-  height: 70%;
+  height: 60%;
   width: 2px;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -1659,6 +1708,9 @@ div#divUsers {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+/* -----------------------“分割线”-------------------*/
 
 @media (orientation: landscape) {
   .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
@@ -1689,7 +1741,30 @@ div#divUsers {
   }
 }
 
-/*Theming for the dashboard*/
+html:not(.layout-mobile) #loginPage .inputContainer input {
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  color: white;
+  border: none;
+  text-shadow: none;
+  font-size: 1.5em;
+}
+
+html:not(.layout-mobile) #loginPage .inputContainer {
+  margin-top: 1.2em;
+}
+.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+  background: #eee;
+  width: 80%;
+  color: #373737;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*控制台 主题*/
 
 .paperList,
 .visualCardBox {
@@ -1736,7 +1811,7 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after
   bottom: -5px;
 }
 
-/*Theming Playback data info*/
+/*主题化播放数据信息*/
 
 .playerStats {
   background: rgba(0, 0, 0, 0.1);
