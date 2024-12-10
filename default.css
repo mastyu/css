@@ -1582,7 +1582,7 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
 /*登录页面主题*/
 
 #loginPage {
-  background: url(http://gg.cloud8.top/login.png),      
+  background: url(https://cdn.jsdelivr.net/gh/mastyu/css@main/login.png),      
     radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   background-size: cover !important;
   background-blend-mode: overlay;
